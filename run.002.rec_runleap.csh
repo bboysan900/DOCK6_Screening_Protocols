@@ -276,7 +276,7 @@ ${amberdir}/ambpdb -p ${system}.com.parm -c ${system}.com.ori.crd -mol2 -sybyl >
 #${amberdir}/antechamber -i ${system}.com.ori.0.mol2 -fi mol2 -at sybyl -o ${system}.com.ori.mol2 -fo mol2 -dr n
  
 if ( -e ${masterdir}/${system}.cof.moe.mol2 ) then
-	${amberdir}/ambpdb -p ${system}.cof.parm -c ${system}.cof.ori.crd -mol2 -sybyl ${system}.cof.ori.mol2 
+	${amberdir}/ambpdb -p ${system}.cof.parm -c ${system}.cof.ori.crd -mol2 -sybyl > ${system}.cof.ori.mol2 
 
 # top2mol2 has been deprecated since Amber15 but can be rebuilt in the antechamber makefile if uncommented
 #${amberdir}/top2mol2 -p ${system}.lig.parm -c ${system}.lig.ori.crd -o ${system}.lig.ori.mol2 -at sybyl -bt sybyl 
